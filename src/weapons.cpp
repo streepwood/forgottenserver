@@ -531,7 +531,7 @@ WeaponMelee::WeaponMelee(LuaScriptInterface* _interface) :
 
 bool WeaponMelee::configureEvent(const pugi::xml_node& node)
 {
-	return !Weapon::configureEvent(node)
+	return Weapon::configureEvent(node);
 }
 
 bool WeaponMelee::configureWeapon(const ItemType& it)
